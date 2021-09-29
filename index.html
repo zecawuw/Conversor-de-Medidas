@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Conversor de Medidas</title>
+</head>
+<body>
+    
+
+    <header>
+        <h1>Convertor de Medidas</h1>
+    </header>
+
+    <div class="container">
+        <section class="conversores">
+                <div class="FeC">
+                    <h2>Fahrenheit e Celsius</h2>
+                    <div class="c-f">
+                        <h3>Celsius para Fahrenheit</h3>
+                        <input id="c" type="number">
+                        <button onclick="medidaF()">resultado</button>
+                    </div>
+                    <div class="f-c">
+                        <h3>Fahrenheit para Celsius</h3>
+                        <input id="f" type="number">
+                        <button onclick="medidaC()">resultado</button>
+                    </div>
+                    <h4>resultado:</h4>
+                    <div id="resultado-1"></div>
+                </div>
+        </section>
+
+        <section class="conversores">
+                <div class="FeC">
+                    <h2>dolar e bitcoin para o real</h2>
+                    <div class="c-f">
+                        <h3>dolar</h3>
+                        <input id="dolar" type="number">
+                        <button onclick="cambioDolar()">converter</button>
+                    </div>
+                    <div class="f-c">
+                        <h3>bitcoin</h3>
+                        <input id="bitcoin" type="number">
+                        <button onclick="cambioBitcoin()">converter</button>
+                    </div>
+                    <h4>resultado:</h4>
+                    <div id="resultado-2"></div>
+                </div>
+        </section>
+
+        <section class="conversores">
+                <div class="FeC">
+                    <h2>anos-luz em km</h2>
+                    <div class="c-f">
+                        <h3>anos-luz</h3>
+                        <input id="km" type="number">
+                        <button onclick="distancia()">resultado</button>
+                    </div>
+                    <!-- <div class="f-c">
+                        <h3>Fahrenheit para Celsius</h3>
+                        <input id="f" type="number">
+                        <button onclick="medidaC()">resultado</button>
+                    </div> -->
+                    <h4>resultado:</h4>
+                    <div id="resultado-3"></div>
+                </div>
+        </section>
+
+</div>
+
+    
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
