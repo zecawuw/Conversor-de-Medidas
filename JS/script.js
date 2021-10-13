@@ -1,4 +1,16 @@
 //converter fahrenheit e celsius
+
+function apagar(){
+  var resultado1 = document.getElementById('resultado-1');
+  resultado1.innerHTML = ''
+
+  var resultado2 = document.getElementById('resultado-2');
+  resultado2.innerHTML = ''
+  
+  var resultado3 = document.getElementById('resultado-3');
+  resultado3.innerHTML = ''
+}
+
 function medidaF(){
     var celsius = parseFloat(document.getElementById("c").value);
     
@@ -8,7 +20,14 @@ function medidaF(){
       
       var resultado = document.getElementById('resultado-1');
       resultado.innerHTML = notaFixada;
+
+      document.getElementById("c").value = '';
+
+      setTimeout(apagar, 5000)
+    
     }
+
+
       
     function medidaC(){
     var fahrenheit = parseFloat(document.getElementById("f").value);
@@ -19,6 +38,11 @@ function medidaF(){
       
     var resultado = document.getElementById('resultado-1');
       resultado.innerHTML = notaFixada;
+
+      document.getElementById("f").value = '';
+
+      setTimeout(apagar, 5000)
+
     
     }
 
@@ -43,11 +67,15 @@ function cambioDolar() {
         let resultado = `R$  ${bid * valorDolar}`
         document.getElementById('resultado-2').innerHTML = resultado
     })
-  
-  }
+
+    document.getElementById("dolar").value = '';
 
   
-  
+    setTimeout(apagar, 5000)
+
+
+  }
+
   function cambioBitcoin() {
     var bitcoin = document.getElementById("bitcoin");
     var valor = bitcoin.value;
@@ -64,6 +92,12 @@ function cambioDolar() {
         let resultado = `R$  ${bid * valorBitcoin.toLocaleString("pt-BR")}`
         document.getElementById('resultado-2').innerHTML = resultado
     })
+
+    document.getElementById("bitcoin").value = '';
+
+    setTimeout(apagar, 5000)
+
+
   }
 
 //ano-luz em km
@@ -77,6 +111,13 @@ function distancia() {
   
     var resultado = document.getElementById("resultado-3");
     resultado.innerHTML = valorEmLuz.toLocaleString("pt-BR");
+  
+    document.getElementById("km").value = '';
+
+    setTimeout(apagar, 5000)
+
+
   }
+
   
   
